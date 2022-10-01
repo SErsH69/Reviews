@@ -1,0 +1,71 @@
+.about_block {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    @media all and (max-width: 1023px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    &__in {
+        background: url('../img/fire.png') 100% 50% no-repeat, linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%);
+        border-radius: 24px;
+        padding: 56px 40px;
+        padding-right: 275px;
+        @media all and (max-width: 1023px) {
+            padding: 24px;
+            background: linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%) !important;
+        }
+    }
+    &__title {
+        font-family: "geometria_bold", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 16px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    &__text {
+        font-family: "geometria_medium", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @media all and (max-width: 1023px) {
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    &__blur-text {
+        font-family: "geometria_medium", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.red_block {
+    background: linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%);
+    border-radius: 24px;
+    padding: 56px 40px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    @media all and (max-width: 1023px) {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        padding: 24px 16px;
+    }
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+            @media all and (max-width: 1023px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+    &__title {
+        margin-bottom: 16px;
+        font-family: "geometria_bold", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #FFFFFF;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 24px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+    &__text {
+        font-family: "geometria_medium", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        @media all and (max-width: 1023px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        p {
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.table_block  {
+    overflow: auto;
+    margin-top: 24px;
+    margin-left: -8px;
+    margin-right: -8px;
+    table {
+        width: max-content;
+        min-width: 100%;
+        border-collapse:collapse;
+        border-spacing:0;
+        height: auto;
+        th {
+            border: 8px solid #0f1b15;
+            padding: 8px;
+            background: linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%);
+            font-family: "geometria_medium", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: left;
+            color: #FFFFFF;
+            @media all and (max-width: 1023px) {
+                font-size: 14px;
+            }
+        }
+        td {
+            border: 8px solid #0f1b15;
+            padding: 8px;
+            font-family: "geometria_medium", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            background: #000000;
+            line-height: 20px;
+            color: #FFFFFF;
+            @media all and (max-width: 1023px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+.main_websites {
+    padding-top: 6px;
+    padding-bottom: 36px;
+    @media all and (max-width: 1023px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    &__title {
+        font-family: 'geometria_bold', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            font-size: 32px;
+            line-height: 40px;
+            margin-bottom: 16px;
+        }
+    }
+    &__text {
+        font-family: 'geometria_medium', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        margin-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 16px;
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: 56px;    
+        }
+        background: linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%);
+        border-radius: 24px;
+        padding: 24px 32px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__l-side {
+        flex: 0 0 204px;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        padding-right: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__logo {
+        font-size: 0;
+        display: block;
+    }
+    &__link {
+        background: linear-gradient(180deg, rgba(87, 96, 91, 0.3) 0%, rgba(38, 116, 79, 0.3) 100%);
+        border-radius: 8px;
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        padding: 16px;
+        text-align: center;
+        margin-top: 32px;
+        span {
+            font-family: "geometria_bold", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            display: inline-block;
+            padding-right: 32px;
+            position: relative;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 20px;
+                height: 20px;
+                right: 0;
+                top: 50%;
+                margin-top: -10px;
+                background: url("data:image/svg+xml,%3Csvg width='17' height='10' viewBox='0 0 17 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0418 9.68808L16.2631 5.43515C16.3972 5.30067 16.4641 5.12247 16.4641 4.94527C16.4641 4.76823 16.3972 4.59152 16.2631 4.45622L12.0418 0.203455C11.7734 -0.0678183 11.3379 -0.0678183 11.0697 0.203455C10.8011 0.473734 10.8011 0.912276 11.0697 1.18289L13.9581 4.09286H1.58333C1.1231 4.09286 0.75 4.46595 0.75 4.92619C0.75 5.38643 1.1231 5.75953 1.58333 5.75953H13.996L11.069 8.70865C10.8011 8.97876 10.8011 9.41763 11.069 9.68808C11.3373 9.95836 11.7727 9.95836 12.0418 9.68808Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+            }
+        }
+    }
+    &__r-side {
+        padding-left: 32px;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__rew {
+        flex: 0 0 170px;
+        margin-right: 20px;
+        span {
+            font-family: "geometria_bold", sans-serif;
+            display: block;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            text-transform: uppercase;
+            line-height: 14px;
+            color: #69746F;
+            margin-bottom: 12px;
+        }
+        &--block {
+            padding: 11px 12px;
+            background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+        }
+        &--stars {
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+        }
+        &--star {
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+        &--txt {
+            font-family: "geometria_bold", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+        }
+        &--opacity {
+            opacity: .5;
+        }
+    }
+    &__pays {
+        flex: 0 0 150px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__pay {
+        padding: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+    }
+    &__pay-more {
+        font-family: "geometria_bold", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 14px;  
+        text-transform: uppercase;
+        color: #69746F;
+        padding: 0;
+        border: 0;
+        width: calc(50% - 4px);
+    }
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        &--time {
+            width: calc(50% - 20px);
+            font-family: "geometria_bold", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFFFFF;
+            min-width: 75px;
+            span {
+                font-family: "geometria_bold", sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 12px;
+                line-height: 14px;
+                display: block;
+                text-transform: uppercase;
+                color: #69746F;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    &__list {
+        width: calc(50% - 20px);
+        &--li {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+            }
+            font-family: "geometria_bold", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            span {
+                display: inline-block;
+                margin-left: 8px;
+                color: #69746F;
+            }
+        }
+    }
+    &__button {
+        margin-top: 16px;
+        margin-bottom: 24px;
+        height: 16px;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: line-through;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);;
+        }
+        span {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 48px;
+            height: 16px;
+            position: relative;
+            z-index: 2;
+            background: #121b16 url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.47183 4.89772L2.88529 9.74891C2.59381 10.0582 2.59381 10.5586 2.88529 10.8669C3.17695 11.1749 3.65025 11.1749 3.94155 10.8669L8.00014 6.57435L12.0577 10.8662C12.3495 11.1749 12.8224 11.1749 13.1139 10.8662C13.4065 10.5579 13.4065 10.0574 13.1139 9.74891L8.52756 4.89772C8.38164 4.74356 8.19107 4.66667 8.00014 4.66667C7.80904 4.66667 7.61686 4.74356 7.47183 4.89772Z' fill='%2369746F'/%3E%3C/svg%3E%0A") 50% no-repeat;
+        }
+    }
+    &__otz {
+        display: flex;
+        margin-bottom: 24px;
+        img {
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+        }
+    }
+}

@@ -1,0 +1,267 @@
+.footer {
+    margin-top: 36px;
+    @media all and (max-width: 1023px) {
+        margin-top: 12px;
+        padding-top: 32px;
+    }
+    &__mob {
+        display: none;
+        @media all and (max-width: 1023px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    &__menu {
+        padding-top: 56px;
+        padding-bottom: 32px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        margin-left: -12px;
+        margin-right: -12px;
+        display: flex;
+        flex-wrap: wrap;
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+            padding-top: 24px;
+            padding-bottom: 6px;
+            margin-left: 0;
+            margin-right: 0;
+            border: 0;
+        }
+        &--item {
+            width: calc(16.6% - 24px);
+            margin-left: 12px;  
+            margin-right: 12px;
+            margin-bottom: 24px;
+            @media all and (max-width: 1320px) {
+                width: calc(25% - 24px);
+            }
+            @media all and (max-width: 1023px) {
+                width: 100%;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                margin-bottom: 0;
+                margin-left: 0;
+                margin-right: 0;
+                &:not(:last-child) {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                }
+            }
+        }
+        &--tit {
+            font-family: "geometria_bold", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            margin-bottom: 16px;
+            @media all and (max-width: 1023px) {
+                margin-bottom: 0;
+                padding-right: 20px;
+                position: relative;
+                cursor: pointer;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    width: 16px;
+                    height: 16px;
+                    background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.33337 8.00016C1.33337 8.4604 1.70647 8.8335 2.16671 8.8335L7.16654 8.83291L7.16671 13.8335C7.16671 14.2609 7.48841 14.6131 7.90285 14.6612L8.00004 14.6668C8.46028 14.6668 8.83337 14.2937 8.83337 13.8335L8.83279 8.83291L13.8334 8.8335C14.2607 8.8335 14.613 8.5118 14.6611 8.09735L14.6667 8.00016C14.6667 7.53993 14.2936 7.16683 13.8334 7.16683L8.83279 7.16666L8.83337 2.16683C8.83337 1.73947 8.51167 1.38724 8.09722 1.3391L8.00004 1.3335C7.5398 1.3335 7.16671 1.70659 7.16671 2.16683L7.16654 7.16666L2.16671 7.16683C1.73934 7.16683 1.38712 7.48853 1.33898 7.90298L1.33337 8.00016Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                    margin-top: -8px;
+                    transition: all .3s ease-out;
+                }
+                &.isOpened {
+                    &:before {
+                        background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1.33337' y='6.6665' width='13.3333' height='2' rx='1' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                    }
+                }
+            }
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            @media all and (max-width: 1023px) {
+                display: none;
+                &.isOpened {
+                    display: block;
+                    margin-top: 8px;
+                }
+            }
+            li {
+                a {
+                    font-family: "geometria_medium", sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    opacity: 0.5;
+                    display: inline-block;
+                    text-decoration: none;
+                    &:hover { 
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &--big {
+            @media all and (max-width: 1023px) {
+                padding: 0;
+            }
+            ul {
+                @media all and (max-width: 1023px) {
+                    display: block;
+                }
+                li {
+                    @media all and (max-width: 1023px) {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        margin-bottom: 0;
+                        &:not(:last-child) {
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                        }
+                    }
+                    a {
+                        font-family: "geometria_bold", sans-serif;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 16px;
+                        line-height: 20px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        margin-bottom: 16px;
+                        text-decoration: none;
+                        display: inline-block;
+                        margin-bottom: 16px;
+                        opacity: 1;
+                        &:hover { 
+                            text-decoration: underline;
+                        }
+                        @media all and (max-width: 1023px) {
+                            text-decoration: none !important;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 72px;
+        @media all and (max-width: 1023px) {
+            padding-bottom: 32px;
+            flex-direction: column-reverse;
+        }
+        &--logo {
+            max-width: 133px;
+            width: 100%;
+            order: 1;
+            margin-right: 20px;
+            @media all and (max-width: 1023px) {
+                max-width: 97px;
+                margin-right: 10px;
+            }
+        }
+        &--copy {
+            font-family: "geometria_medium", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            order: 2;
+            line-height: 16px;
+            color: #FFFFFF;
+            opacity: 0.5;
+            max-width: 650px;
+            width: 100%;
+            margin-right: 20px;
+            @media all and (max-width: 1023px) {
+                margin-top: 24px;
+                margin-right: 0;
+                max-width: 100%;
+            }
+        }
+        &--form {
+            max-width: 165px;
+            width: 100%;
+            order: 3;
+            margin-right: 20px;
+            @media all and (max-width: 1023px) {
+                max-width: 100%;
+                margin-right: 0;
+            }
+            form {
+                display: flex;
+                align-items: center;
+                background: linear-gradient(90deg, #3B423F 0%, #69746F 100%);
+                border-radius: 8px;
+                padding: 8px 12px;
+                input {
+                    &[type="email"] {
+                        background: none;
+                        border: 0;
+                        font-family: "geometria_bold", sans-serif;
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 12px;
+                        line-height: 14px;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        width: calc(100% - 26px);
+                        &::placeholder {
+                            color: #FFFFFF;
+                        }
+                    }
+                    &[type="submit"] {
+                        width: 16px;
+                        height: 16px;
+                        background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.6511 7.35431L6.79995 2.76776C6.49069 2.47628 5.99025 2.47628 5.68194 2.76776C5.37401 3.05942 5.37401 3.53272 5.68194 3.82403L9.97451 7.88262L5.6827 11.9401C5.37401 12.232 5.37401 12.7049 5.6827 12.9964C5.99101 13.289 6.49145 13.289 6.79995 12.9964L11.6511 8.41004C11.8053 8.26412 11.8822 8.07355 11.8822 7.88262C11.8822 7.69151 11.8053 7.49934 11.6511 7.35431Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                        margin-left: 10px;
+                        font-size: 0;
+                        cursor: pointer;
+                        border: 0;
+                    }
+                }
+            }
+        }
+        &--tit {
+            font-family: "geometria_medium", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-bottom: 8px;
+            @media all and (max-width: 1023px) {
+                font-size: 14px;
+            }
+        }
+        &--socs {
+            max-width: 155px;
+            width: 100%;
+            display: flex;
+            order: 4;
+            flex-wrap: wrap;
+        }
+        &--soc {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0;
+            text-decoration: none;
+            &:not(:last-child) {
+                margin-right: 16px;
+            }
+        }
+    }
+}
