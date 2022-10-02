@@ -650,16 +650,16 @@ template {
 }
 
 @font-face {
-  font-family: "geometria_extrabold";
+  font-family: "geometria_light";
   font-display: swap;
-  src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
+  src: url("../fonts/geometria_light.woff2") format("woff2"), url("../fonts/geometria_light.woff") format("woff"), url("../fonts/geometria_light.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "geometria_light";
+  font-family: "geometria_extrabold";
   font-display: swap;
-  src: url("../fonts/geometria_light.woff2") format("woff2"), url("../fonts/geometria_light.woff") format("woff"), url("../fonts/geometria_light.ttf") format("ttf");
+  src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -1599,7 +1599,13 @@ textarea {
   height: 16px;
   position: relative;
   z-index: 2;
+  transform: rotate(180deg);
+  transition: all 0.3s ease-out;
   background: #121b16 url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.47183 4.89772L2.88529 9.74891C2.59381 10.0582 2.59381 10.5586 2.88529 10.8669C3.17695 11.1749 3.65025 11.1749 3.94155 10.8669L8.00014 6.57435L12.0577 10.8662C12.3495 11.1749 12.8224 11.1749 13.1139 10.8662C13.4065 10.5579 13.4065 10.0574 13.1139 9.74891L8.52756 4.89772C8.38164 4.74356 8.19107 4.66667 8.00014 4.66667C7.80904 4.66667 7.61686 4.74356 7.47183 4.89772Z' fill='%2369746F'/%3E%3C/svg%3E%0A") 50% no-repeat;
+}
+
+.main_websites__button.isOpened span {
+  transform: rotate(0);
 }
 
 .main_websites__otz {
@@ -1609,6 +1615,49 @@ textarea {
 
 .main_websites__otz img:not(:last-child) {
   margin-right: 32px;
+}
+
+.main_websites__text-hide {
+  display: none;
+}
+
+.main_websites__text-hide.isOpened {
+  display: flex;
+}
+
+.main_websites__text-hide--l-side {
+  flex: 0 0 216px;
+  margin-right: 22px;
+}
+
+.main_websites__text-hide--list {
+  font-family: "geometria_bold", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #69746F;
+}
+
+.main_websites__text-hide--list:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.main_websites__text-hide--list span {
+  color: #FFFFFF;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.main_websites__text-hide--r-side {
+  width: 100%;
+  font-family: "geometria_medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 @media all and (max-width: 1320px) {
