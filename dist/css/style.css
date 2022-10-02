@@ -650,16 +650,16 @@ template {
 }
 
 @font-face {
-  font-family: "geometria_light";
+  font-family: "geometria_extrabold";
   font-display: swap;
-  src: url("../fonts/geometria_light.woff2") format("woff2"), url("../fonts/geometria_light.woff") format("woff"), url("../fonts/geometria_light.ttf") format("ttf");
+  src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "geometria_extrabold";
+  font-family: "geometria_light";
   font-display: swap;
-  src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
+  src: url("../fonts/geometria_light.woff2") format("woff2"), url("../fonts/geometria_light.woff") format("woff"), url("../fonts/geometria_light.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -1365,10 +1365,11 @@ textarea {
   line-height: 20px;
   color: #FFFFFF;
   opacity: 0.5;
-  margin-bottom: 24px;
+  margin-bottom: 56px;
 }
 
 .main_websites__block {
+  position: relative;
   background: linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%);
   border-radius: 24px;
   padding: 24px 32px;
@@ -1660,9 +1661,79 @@ textarea {
   color: #FFFFFF;
 }
 
+.main_websites__flags {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: -32px;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.main_websites__flag {
+  padding: 10px 28px 8px 8px;
+  font-family: "geometria_bold", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-right: 16px;
+  border-radius: 8px 8px 0px 0px;
+  position: relative;
+}
+
+.main_websites__flag:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+}
+
+.main_websites__fast {
+  background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);
+}
+
+.main_websites__prof {
+  background: linear-gradient(90deg, #FFE55C 0%, #FFB91C 100%);
+}
+
+.main_websites__reliable {
+  background: linear-gradient(270deg, #5F73FA 0%, #7B61FF 100%);
+}
+
+.main_websites__close {
+  background: linear-gradient(90deg, #3B423F 0%, #69746F 100%);
+}
+
 @media all and (max-width: 1320px) {
   .footer__menu--item {
     width: calc(25% - 24px);
+  }
+
+  .main_websites__block {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .main_websites__l-side {
+    border: 0;
+    flex: none;
+    padding-right: 0;
+    margin-bottom: 30px;
+    margin-top: 32px;
+  }
+
+  .main_websites__link {
+    display: none;
+  }
+
+  .main_websites__mobs {
+    display: block;
   }
 }
 
