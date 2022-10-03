@@ -108,17 +108,41 @@
         @media all and (max-width: 1320px) {
             display: block;
         }
+        @media all and (max-width: 1023px) {
+            margin-top: 0;
+            span {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
     }
     &__r-side {
         padding-left: 32px;
+        @media all and (max-width: 1023px) {
+            padding-left: 0;
+        }
     }
     &__top {
         display: flex;
         justify-content: space-between;
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
     }
     &__rew {
         flex: 0 0 170px;
         margin-right: 20px;
+        @media all and (max-width: 1023px) {
+            flex: none;
+            margin-right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+            margin-bottom: 16px;
+        }
         span {
             font-family: "geometria_bold", sans-serif;
             display: block;
@@ -129,6 +153,10 @@
             line-height: 14px;
             color: #69746F;
             margin-bottom: 12px;
+            @media all and (max-width: 1023px) {
+                margin-left: 12px;
+                margin-bottom: 0px;
+            }
         }
         &--block {
             padding: 11px 12px;
@@ -136,6 +164,9 @@
             border-radius: 4px;
             display: flex;
             align-items: center;
+            @media all and (max-width: 1023px) {
+                padding: 10px 12px;
+            }
         }
         &--stars {
             display: flex;
@@ -146,6 +177,15 @@
             &:not(:last-child) {
                 margin-right: 8px;
             }
+            @media all and (max-width: 1023px) {
+                width: 12px;
+                height: 12px;
+                margin-top: -5px;
+                svg {
+                    width: 12px !important;
+                    height: 12px !important;
+                }
+            }
         }
         &--txt {
             font-family: "geometria_bold", sans-serif;
@@ -154,6 +194,10 @@
             font-size: 16px;
             line-height: 20px;
             color: #FFFFFF;
+            @media all and (max-width: 1023px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
         }
         &--opacity {
             opacity: .5;
@@ -165,6 +209,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        @media all and (max-width: 1023px) {
+            flex: none;
+            justify-content: flex-start;
+            margin-left: 0;
+        }
     }
     &__pay {
         padding: 8px;
@@ -173,6 +222,9 @@
         margin-bottom: 8px;
         display: flex;
         align-items: center;
+        @media all and (max-width: 1023px) {
+            margin-right: 8px;
+        }
     }
     &__pay-more {
         font-family: "geometria_bold", sans-serif;
@@ -185,11 +237,18 @@
         padding: 0;
         border: 0;
         width: calc(50% - 4px);
+        @media all and (max-width: 1023px) {
+            width: auto;
+            padding: 8px;
+        }
     }
     &__info {
         display: flex;
         justify-content: space-around;
         width: 100%;
+        @media all and (max-width: 1023px) {
+            flex-direction: column;
+        }
         &--time {
             width: calc(50% - 20px);
             font-family: "geometria_bold", sans-serif;
@@ -199,6 +258,15 @@
             line-height: 30px;
             color: #FFFFFF;
             min-width: 75px;
+            @media all and (max-width: 1023px) {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                font-size: 12px;
+                line-height: 14px;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+            }
             span {
                 font-family: "geometria_bold", sans-serif;
                 font-style: normal;
@@ -209,14 +277,28 @@
                 text-transform: uppercase;
                 color: #69746F;
                 margin-bottom: 8px;
+                @media all and (max-width: 1023px) {
+                    br {
+                        display: none;
+                    }
+                    margin-bottom: 0;
+                    margin-right: 8px;
+                }
             }
         }
     }
     &__list {
         width: calc(50% - 20px);
+        @media all and (max-width: 1023px) {
+            width: 100%;
+            margin-bottom: 16px;
+        }
         &--li {
             &:not(:last-child) {
                 margin-bottom: 10px;
+                @media all and (max-width: 1023px) {
+                    margin-bottom: 16px;
+                }
             }
             font-family: "geometria_bold", sans-serif;
             font-style: normal;
@@ -229,6 +311,10 @@
                 display: inline-block;
                 margin-left: 8px;
                 color: #69746F;
+                @media all and (max-width: 1023px) {
+                    margin-left: 0;
+                    margin-right: 8px;
+                }
             }
         }
     }
@@ -240,6 +326,10 @@
         cursor: pointer;
         text-decoration: line-through;
         position: relative;
+        @media all and (max-width: 1023px) {
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -271,9 +361,17 @@
     &__otz {
         display: flex;
         margin-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+        }
         img {
             &:not(:last-child) {
                 margin-right: 32px;
+                @media all and (max-width: 1023px) {
+                    margin-right: 16px;
+                    margin-bottom: 16px;
+                }
             }
         }
     }
@@ -281,10 +379,18 @@
         display: none;
         &.isOpened {
             display: flex;
+            @media all and (max-width: 1023px) {
+                flex-direction: column;
+            }
         }
         &--l-side {
             flex: 0 0 216px;
             margin-right: 22px;
+            @media all and (max-width: 1023px) {
+                flex: none;
+                margin-right: 0;
+                margin-bottom: 16px;
+            }
         }
         &--list {
             font-family: "geometria_bold", sans-serif;
@@ -311,6 +417,9 @@
             font-size: 12px;
             line-height: 16px;
             color: #FFFFFF;
+            @media all and (max-width: 1023px) {
+                margin-bottom: 16px;
+            }
         }
     }
     &__flags {
@@ -321,6 +430,12 @@
         left: 0;
         right: 0;
         width: 100%;
+        @media all and (max-width: 1023px) {
+            position: relative;
+            top: unset;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
     }
     &__flag {
         padding: 10px 28px 8px 8px;
@@ -332,8 +447,17 @@
         text-transform: uppercase;
         color: #FFFFFF;
         margin-right: 16px;
+        display: flex;
+        align-items: center;
         border-radius: 8px 8px 0px 0px;
         position: relative;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 8px;
+            padding: 6px 28px 4px 8px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+        }
         &:before {
             content: '';
             position: absolute;
@@ -341,18 +465,31 @@
             width: 16px;
             height: 16px;
             margin-top: -8px;
+            right: 8px;
         }
     }
     &__fast {
         background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);
+        &:before {
+            background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.58072 8.53319H8.00006C8.18939 8.53319 8.37006 8.61386 8.49606 8.75453C8.62206 8.89519 8.68272 9.08319 8.66272 9.27119L8.36339 12.0379L11.4194 7.46653H8.00006C7.81072 7.46653 7.63006 7.38586 7.50406 7.24519C7.37739 7.10453 7.31672 6.91653 7.33739 6.72853L7.63672 3.96253L4.58072 8.53319ZM7.40739 15.3332C7.33139 15.3332 7.25472 15.3205 7.17939 15.2932C6.89139 15.1879 6.71139 14.8999 6.74472 14.5952L7.25739 9.86653H3.33339C3.08739 9.86653 2.86139 9.73119 2.74539 9.51453C2.62939 9.29719 2.64272 9.03386 2.77939 8.82919L8.03872 0.963194C8.20872 0.707194 8.53139 0.60186 8.82006 0.707194C9.10872 0.81186 9.28872 1.10053 9.25539 1.40519L8.74272 6.13319H12.6667C12.9127 6.13319 13.1387 6.26919 13.2547 6.48586C13.3707 6.70319 13.3574 6.96586 13.2207 7.17053L7.96139 15.0372C7.83539 15.2265 7.62472 15.3332 7.40739 15.3332Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+        }
     }
     &__prof {
         background: linear-gradient(90deg, #FFE55C 0%, #FFB91C 100%);
+        &:before {
+            background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.99674 6.34433C3.64208 7.81033 3.67074 10.1343 5.08274 11.5737C5.77208 12.2783 6.68808 12.667 7.66408 12.6677H7.66741C8.64541 12.6677 9.56474 12.279 10.2574 11.5737C11.6947 10.1083 11.6921 7.725 10.2514 6.26167L8.26074 4.22767C8.05941 5.88233 7.43874 7.33433 6.33341 7.33433C5.99474 7.33433 5.44274 7.18367 4.99674 6.34433ZM7.66741 14.001H7.66274C6.32541 13.9997 5.07074 13.4697 4.13008 12.5063C2.18741 10.5263 2.18474 7.30433 4.12408 5.32767L4.77941 4.665C4.94874 4.49567 5.19474 4.43033 5.42741 4.491C5.65874 4.55367 5.83874 4.73567 5.89874 4.96767C6.05208 5.56033 6.23474 5.85167 6.33541 5.96233C6.57208 5.713 7.00008 4.70567 7.00008 3.001C7.00008 2.903 7.00008 2.81033 6.99474 2.71767C6.98208 2.521 7.05741 2.32833 7.20008 2.19233C7.46474 1.941 7.88874 1.941 8.14274 2.20233L11.2027 5.32833C13.1494 7.30433 13.1527 10.5263 11.2094 12.507C10.2634 13.471 9.00608 14.001 7.66741 14.001Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+        }
     }
     &__reliable {
         background: linear-gradient(270deg, #5F73FA 0%, #7B61FF 100%);
+        &:before {
+            background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8 2.76433L3.33333 5.38966V5.48633C3.33333 8.64633 5.044 11.5723 7.79867 13.1223L8 13.2357L8.20133 13.1223C10.956 11.5723 12.6667 8.64633 12.6667 5.48633V5.38966L8 2.76433ZM8 14.567C7.774 14.567 7.548 14.511 7.34733 14.3977L7.14533 14.2837C3.97133 12.499 2 9.12766 2 5.48633V5.38966C2 4.91033 2.26 4.465 2.67867 4.22833L7.34667 1.603C7.75 1.37633 8.25067 1.37566 8.65267 1.60233L13.32 4.22766C13.74 4.465 14 4.91033 14 5.38966V5.48633C14 9.12766 12.0287 12.499 8.85467 14.2837L8.65333 14.397C8.452 14.5103 8.226 14.567 8 14.567Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+        }
     }
     &__close {
         background: linear-gradient(90deg, #3B423F 0%, #69746F 100%);
+        &:before {
+            background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.20379 11.138C7.99646 11.024 7.74579 11.026 7.54379 11.1466L5.04512 12.6133L6.02379 8.80665C6.60712 9.13998 7.28112 9.33331 7.99979 9.33331C8.71846 9.33331 9.39246 9.13998 9.97646 8.80665L10.9691 12.668L8.20379 11.138ZM7.99979 2.66665C9.47046 2.66665 10.6665 3.86265 10.6665 5.33331C10.6665 6.80398 9.47046 7.99998 7.99979 7.99998C6.52912 7.99998 5.33312 6.80398 5.33312 5.33331C5.33312 3.86265 6.52912 2.66665 7.99979 2.66665ZM12.6458 13.834L11.1065 7.84798C11.6638 7.15998 11.9998 6.28598 11.9998 5.33331C11.9998 3.12731 10.2058 1.33331 7.99979 1.33331C5.79446 1.33331 3.99979 3.12731 3.99979 5.33331C3.99979 6.28598 4.33579 7.15998 4.89312 7.84798L3.35446 13.834C3.28712 14.0953 3.38379 14.3706 3.59912 14.5326C3.81379 14.6946 4.10579 14.7093 4.33712 14.5746L7.89046 12.4886L11.6771 14.5833C11.7778 14.6393 11.8891 14.6666 11.9998 14.6666C12.1445 14.6666 12.2885 14.62 12.4085 14.5273C12.6185 14.3646 12.7125 14.092 12.6458 13.834Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+        }
     }
 }
