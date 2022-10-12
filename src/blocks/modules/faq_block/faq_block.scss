@@ -89,3 +89,17 @@
         }
     }
 }
+.faq_main {
+    .faq_block {
+        padding-top: 0;
+        &__title {
+            display: none;
+        }
+        &__block {
+            padding: 38px 24px;
+            @media all and (max-width: 1023px) {
+                padding: 16px;
+            }
+        }
+    }
+}

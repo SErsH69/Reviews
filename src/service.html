@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/favicon.png" />
-    <title>Reviews | Main</title>
+    <title>Reviews | Services</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,12 +13,14 @@
         <div class="wrapper__in center_block">
             @@include('blocks/modules/header/header.html', {})
             <main class="content">
+                @@include('blocks/modules/breadcrums/breadcrums.html', {})
                 @@include('blocks/modules/main_first/main_first.html', {})
                 @@include('blocks/modules/main_websites/main_websites.html', {})
                 @@include('blocks/modules/main_prod/main_prod.html', {})
                 @@include('blocks/modules/prev_block/prev_block.html', {})
-                @@include('blocks/modules/about_block/about_block.html', {})
+                @@include('blocks/modules/serv_block/serv_block.html', {})
                 @@include('blocks/modules/red_block/red_block.html', {})
+                @@include('blocks/modules/serv_block/serv_block.html', {})
                 @@include('blocks/modules/faq_block/faq_block.html', {})
             </main>
         </div>

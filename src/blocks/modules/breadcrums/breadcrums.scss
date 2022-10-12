@@ -1,0 +1,39 @@
+.breadcrums {
+    margin-bottom: 32px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    @media all and (max-width: 1023px) {
+        margin-bottom: 16px;
+        margin-top: 24px;
+    }
+    span {
+        font-family: "geometria_bold", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #69746F;
+        a {
+            font-family: "geometria_bold", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 14px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__splash {
+        margin-left: 4px;
+        margin-right: 4px;
+        background: url("data:image/svg+xml,%3Csvg width='3' height='12' viewBox='0 0 3 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.084 11.332V0.879999H0.26V11.332H2.084Z' fill='%2369746F'/%3E%3C/svg%3E%0A") 50% no-repeat;
+        width: 5px;
+        height: 14px;
+    }
+}

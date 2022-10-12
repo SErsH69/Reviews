@@ -1,5 +1,7 @@
 .footer {
     margin-top: 36px;
+    position: relative;
+    z-index: 2;
     @media all and (max-width: 1023px) {
         margin-top: 12px;
         padding-top: 32px;

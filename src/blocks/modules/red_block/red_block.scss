@@ -52,6 +52,137 @@
             }
         }
     }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        li {
+            font-family: "geometria_medium", sans-serif;
+            position: relative;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            padding-left: 24px;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 8px;
+                height: 8px;
+                background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);
+                border-radius: 50%;
+                top: 50%;
+                left: 0;
+                margin-top: -4px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 16px;
+                @media all and (max-width: 1023px) {
+                    margin-bottom: 12px;
+                }
+            }
+            @media all and (max-width: 1023px) {
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+    &__check {
+        list-style: none;
+        padding: 0;
+        padding-top: 24px;
+        margin: 0;
+        padding-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        li {
+            font-family: "geometria_medium", sans-serif;
+            position: relative;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            padding-left: 42px;
+            &:before {
+                position: absolute;
+                content: '';
+                width: 24px;
+                height: 24px;
+                background: rgba(65, 255, 164, 0.3) url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.23999 2.5L4.64999 7.00625L2.75999 5.16875L1.5 6.39374L4.64999 9.5L10.5 3.76874L9.23999 2.5Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                border-radius: 50%;
+                top: 50%;
+                left: 0;
+                margin-top: -12px;
+            }
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+            @media all and (max-width: 1023px) {
+                font-size: 14px;
+                line-height: 16px;
+                padding-left: 32px;
+            }
+        }
+    }
+    &__number {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        @media all and (max-width: 1023px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+        li {
+            font-family: "geometria_medium", sans-serif;
+            position: relative;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            padding-left: 39px;
+            &:before {
+                position: absolute;
+                content: attr(data-number);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 23px;
+                height: 23px;
+                background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);
+                border-radius: 50%;
+                top: 50%;
+                left: 0;
+                margin-top: -11.5px;
+                font-family: "geometria_medium", sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 13px;
+                line-height: 15px;
+                color: #FFFFFF;
+            }
+            &:not(:last-child) {
+                margin-bottom: 19px;
+            }
+            @media all and (max-width: 1023px) {
+                font-size: 14px;
+                padding-left: 31px;
+                line-height: 16px;
+            }
+        }
+    }
 }
 .table_block  {
     overflow: auto;
