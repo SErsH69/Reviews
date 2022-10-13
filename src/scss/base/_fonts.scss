@@ -11,14 +11,14 @@
 	font-weight: 400;
 }
 @font-face {
-	font-family: "geometria_medium";
-	font-display: swap;
-	src: url("../fonts/geometria_medium.woff2") format("woff2"), url("../fonts/geometria_medium.woff") format("woff"), url("../fonts/geometria_medium.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
 	font-family: "geometria_light";
 	font-display: swap;
 	src: url("../fonts/geometria_light.woff2") format("woff2"), url("../fonts/geometria_light.woff") format("woff"), url("../fonts/geometria_light.ttf") format("ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "geometria_medium";
+	font-display: swap;
+	src: url("../fonts/geometria_medium.woff2") format("woff2"), url("../fonts/geometria_medium.woff") format("woff"), url("../fonts/geometria_medium.ttf") format("ttf");
 	font-weight: 400;
 }

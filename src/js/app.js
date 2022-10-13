@@ -10,6 +10,7 @@ import FaqBlock from '../blocks/modules/faq_block/faq_block.js';
 import MainProd from '../blocks/modules/main_prod/main_prod.js';
 import MainWeb from '../blocks/modules/main_websites/main_websites.js';
 import ServBlock from '../blocks/modules/serv_block/serv_block.js';
+import PrevSlider from '../blocks/modules/prev_slider/prev_slider.js';
 
 $(function () {
     const header = new Header();
@@ -19,6 +20,7 @@ $(function () {
     const mainProd = new MainProd();
     const mainWeb = new MainWeb();
     const servBlock = new ServBlock();
+    const prevSlider = new PrevSlider();
     
     $('table').wrap('<div class="table_block"></div>');      
     $('.main_first__more').on('click', function () {
@@ -38,4 +40,5 @@ $(function () {
     mainProd.init();
     mainWeb.init();
     servBlock.init();
+    prevSlider.init();
 });
