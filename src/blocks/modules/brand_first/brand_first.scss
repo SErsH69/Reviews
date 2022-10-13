@@ -1,0 +1,244 @@
+.brand_first {
+    padding-bottom: 36px;
+    @media all and (max-width: 1200px) {
+        padding-bottom: 16px;
+    }
+    &__top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 32px;
+        @media all and (max-width: 1200px) {
+            margin-bottom: 16px;
+            flex-direction: column;
+        }
+    }
+    &__l-side {
+        width: calc(53% - 5px);
+        @media all and (max-width: 1200px) {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+    &__h1 {
+        margin-bottom: 23px;
+        font-family: "geometria_bold", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        color: #FFFFFF;
+        @media all and (max-width: 1200px) {
+            margin-bottom: 16px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 23px;
+        align-items: center;
+        @media all and (max-width: 1200px) {
+            margin-left: -5px;
+            margin-right: -5px;
+            margin-bottom: 16px;
+        }
+    }
+    &__img, &__widget {
+        margin-right: 24px;
+        max-width: 187px;
+        @media all and (max-width: 1200px) {
+            max-width: 120px;
+            margin-left: 5px;
+            margin-right: 5px;
+            max-width: calc(50% - 10px);
+        }
+    }
+    &__r-side {
+        width: calc(47% - 5px);
+        background: #000000;
+        padding: 15px;
+        padding-top: 35px;
+        position: relative;
+        border-radius: 24px;
+        @media all and (max-width: 1200px) {
+            width: 100%;
+            padding: 10px;
+            padding-top: 24px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            top: 14px;
+            left: 24px;
+            width: 40px;
+            height: 9px;
+            background: url("data:image/svg+xml,%3Csvg width='40' height='9' viewBox='0 0 40 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='4.79616' cy='4.57143' rx='4.11794' ry='4.10884' fill='%2369746F'/%3E%3Cellipse cx='20.2385' cy='4.57143' rx='4.11794' ry='4.10884' fill='%2369746F'/%3E%3Cellipse cx='35.6804' cy='4.57143' rx='4.11794' ry='4.10884' fill='%2369746F'/%3E%3C/svg%3E%0A") 50% / 100% no-repeat;
+            @media all and (max-width: 1200px) {
+                width: 27px;
+                height: 6px;
+                top: 9px;
+                left: 16px;
+            }
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+    &__text {
+        font-family: "geometria_medium", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        opacity: 0.5;
+        @media all and (max-width: 1200px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 32px;
+        background: linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%);
+        border-radius: 24px;
+        @media all and (max-width: 1200px) {
+            flex-direction: column;
+            padding: 24px 32px;
+        }
+    }
+    &__info {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        @media all and (max-width: 1200px) {
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        &--time {
+            width: calc(50% - 20px);
+            font-family: "geometria_bold", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: #FFFFFF;
+            min-width: 75px;
+            @media all and (max-width: 1023px) {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+            span {
+                font-family: "geometria_bold", sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 12px;
+                line-height: 14px;
+                display: block;
+                text-transform: uppercase;
+                color: #69746F;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    &__list {
+        width: calc(50% - 20px);
+        @media all and (max-width: 1023px) {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+        &--li {
+            &:not(:last-child) {
+                margin-bottom: 10px;
+                @media all and (max-width: 1023px) {
+                    margin-bottom: 16px;
+                }
+            }
+            font-family: "geometria_bold", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            span {
+                display: inline-block;
+                margin-left: 8px;
+                color: #69746F;
+                @media all and (max-width: 1023px) {
+                    margin-left: 0;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    &__imgs {
+        max-width: 342px;
+        width: 100%;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px;
+        img:not(:last-child) {
+            margin-bottom: 16px;
+        }
+        @media all and (max-width: 1200px) {
+            max-width: 100%;
+            border: 0;
+            padding: 16px;
+        }
+    }
+    &__button {
+        max-width: 240px;
+        width: 100%;
+        text-align: right;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        a {
+            display: inline-block;
+            margin-left: auto;
+            text-decoration: none;
+            position: relative;
+            background: linear-gradient(180deg, rgba(87, 96, 91, 0.3) 0%, rgba(38, 116, 79, 0.3) 100%);
+            border-radius: 8px;
+            padding: 16px 56px 16px 24px;
+            font-family: "geometria_extrabold", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 20px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            &:before {
+                content: '';
+                position: absolute;
+                background: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.7918 14.6881L18.0131 10.4352C18.1472 10.3007 18.2141 10.1225 18.2141 9.94527C18.2141 9.76823 18.1472 9.59152 18.0131 9.45622L13.7918 5.20345C13.5234 4.93218 13.0879 4.93218 12.8197 5.20345C12.5511 5.47373 12.5511 5.91228 12.8197 6.18289L15.7081 9.09286H3.33333C2.8731 9.09286 2.5 9.46595 2.5 9.92619C2.5 10.3864 2.8731 10.7595 3.33333 10.7595H15.746L12.819 13.7086C12.5511 13.9788 12.5511 14.4176 12.819 14.6881C13.0873 14.9584 13.5227 14.9584 13.7918 14.6881Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
+                top: 50%;
+                width: 20px;
+                height: 20px;
+                margin-top: -10px;
+                right: 20px;
+            }
+        }
+        @media all and (max-width: 1200px) {
+            max-width: 100%;
+            justify-content: center;
+            border: 0;
+            a {
+                max-width: 224px;
+                width: 100%;
+                margin-left: auto;
+                text-align: center;
+                margin-right: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.payments_block {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    @media all and (max-width: 1023px) {
+        padding-top: 16px;
+        padding-bottom: 0;
+    }
+    &__title {
+        font-family: "geometria_bold", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
+        color: #FFFFFF;
+        margin-bottom: 36px;
+        @media all and (max-width: 1023px) {
+            margin-bottom: 16px;
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    &__blocks {
+        overflow-x: auto;
+    }
+    &__in {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        @media all and (max-width: 1023px) {
+            padding-bottom: 16px;
+        }
+    }
+    &__block {
+        background: linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%);
+        border-radius: 8px;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 102px;
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
