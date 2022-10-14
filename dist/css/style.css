@@ -643,16 +643,16 @@ template {
 }
 
 @font-face {
-  font-family: "geometria_bold";
+  font-family: "geometria_extrabold";
   font-display: swap;
-  src: url("../fonts/geometria_bold.woff2") format("woff2"), url("../fonts/geometria_bold.woff") format("woff"), url("../fonts/geometria_bold.ttf") format("ttf");
+  src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "geometria_extrabold";
+  font-family: "geometria_bold";
   font-display: swap;
-  src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
+  src: url("../fonts/geometria_bold.woff2") format("woff2"), url("../fonts/geometria_bold.woff") format("woff"), url("../fonts/geometria_bold.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -715,7 +715,7 @@ body {
 
 .wrapper__in {
   overflow: hidden;
-  z-index: 1;
+  z-index: 3;
   display: flex;
   margin-bottom: 32px;
   width: 100%;
@@ -787,6 +787,31 @@ img {
 
 textarea {
   resize: none;
+}
+
+.header__form p,
+.footer__info--form p {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__form .wpcf7-spinner,
+.footer__info--form .wpcf7-spinner {
+  display: none !important;
+}
+
+.header__form .wpcf7-response-output,
+.header__form .wpcf7-not-valid-tip,
+.footer__info--form .wpcf7-response-output,
+.footer__info--form .wpcf7-not-valid-tip {
+  display: none !important;
+}
+
+.header__form input[type=email],
+.footer__info--form input[type=email] {
+  width: 100% !important;
 }
 
 .header__in {

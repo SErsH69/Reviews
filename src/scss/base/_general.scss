@@ -43,7 +43,7 @@ body {
     }
     &__in {
         overflow: hidden;
-        z-index: 1;
+        z-index: 3;
         display: flex;
         margin-bottom: 32px;
         width: 100%;
@@ -177,4 +177,21 @@ textarea {
     }
     
     // scrollbar end
+}
+.header__form, .footer__info--form {
+    p {
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .wpcf7-spinner {
+        display: none !important;
+    }
+    .wpcf7-response-output, .wpcf7-not-valid-tip {
+        display: none !important;
+    }
+    input[type=email] {
+        width: 100% !important;
+    }
 }
