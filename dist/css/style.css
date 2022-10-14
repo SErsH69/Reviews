@@ -1318,7 +1318,8 @@ textarea {
   color: #FFFFFF;
 }
 
-.red_block__text {
+.red_block__text,
+.red_block p {
   font-family: "geometria_medium", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -1328,11 +1329,13 @@ textarea {
   opacity: 0.5;
 }
 
-.red_block__text p:first-child {
+.red_block__text p:first-child,
+.red_block p p:first-child {
   margin-top: 0;
 }
 
-.red_block__text p:last-child {
+.red_block__text p:last-child,
+.red_block p p:last-child {
   margin-bottom: 0;
 }
 
@@ -3193,7 +3196,8 @@ textarea {
     line-height: 24px;
   }
 
-  .red_block__text {
+  .red_block__text,
+  .red_block p {
     font-size: 14px;
     line-height: 16px;
   }
