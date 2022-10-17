@@ -39,7 +39,7 @@
         &:not(:last-child) {
             margin-bottom: 56px;    
         }
-        background: linear-gradient(180deg, rgba(48, 50, 49, 0.5) 0%, rgba(17, 58, 38, 0.5) 100%);
+        background: linear-gradient(180deg, rgba(48, 50, 49, 1) 0%, rgba(17, 58, 38, 1) 100%);
         border-radius: 24px;
         padding: 24px 32px;
         display: flex;
@@ -47,6 +47,23 @@
         @media all and (max-width: 1320px) {
             flex-direction: column;
             padding: 16px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            left: -1px;
+            right: -1px;
+            bottom: -1px;
+            top: -1px;
+            border-radius: 24px;
+            width: calc(100% + 2px);
+            height: calc(100% + 2px);
+            z-index: -1;
+        }
+        &:hover {
+            &:before {
+                background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);
+            }
         }
     }
     &__l-side {
@@ -102,6 +119,9 @@
         }
         @media all and (max-width: 1320px) {
             display: none;
+        }
+        &:hover {
+            background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);
         }
     }
     &__mobs {
@@ -291,7 +311,7 @@
             z-index: 2;
             transform: rotate(180deg);
             transition: all .3s ease-out;
-            background: #121b16 url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.47183 4.89772L2.88529 9.74891C2.59381 10.0582 2.59381 10.5586 2.88529 10.8669C3.17695 11.1749 3.65025 11.1749 3.94155 10.8669L8.00014 6.57435L12.0577 10.8662C12.3495 11.1749 12.8224 11.1749 13.1139 10.8662C13.4065 10.5579 13.4065 10.0574 13.1139 9.74891L8.52756 4.89772C8.38164 4.74356 8.19107 4.66667 8.00014 4.66667C7.80904 4.66667 7.61686 4.74356 7.47183 4.89772Z' fill='%2369746F'/%3E%3C/svg%3E%0A") 50% no-repeat;
+            background: #21362c url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.47183 4.89772L2.88529 9.74891C2.59381 10.0582 2.59381 10.5586 2.88529 10.8669C3.17695 11.1749 3.65025 11.1749 3.94155 10.8669L8.00014 6.57435L12.0577 10.8662C12.3495 11.1749 12.8224 11.1749 13.1139 10.8662C13.4065 10.5579 13.4065 10.0574 13.1139 9.74891L8.52756 4.89772C8.38164 4.74356 8.19107 4.66667 8.00014 4.66667C7.80904 4.66667 7.61686 4.74356 7.47183 4.89772Z' fill='%2369746F'/%3E%3C/svg%3E%0A") 50% no-repeat;
         }
         &.isOpened {
             span {

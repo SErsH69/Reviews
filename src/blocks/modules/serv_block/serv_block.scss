@@ -111,6 +111,9 @@
         @media all and (max-width: 1280px) {
             font-size: 14px;
         }
+        &:hover {
+            background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);
+        }
     }
     &__r-side {
         background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);

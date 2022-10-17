@@ -227,6 +227,9 @@
                 margin-top: -10px;
                 right: 20px;
             }
+            &:hover {
+                background: linear-gradient(90deg, #7DE310 0%, #0EEB81 100%);
+            }
         }
         @media all and (max-width: 1200px) {
             max-width: 100%;
