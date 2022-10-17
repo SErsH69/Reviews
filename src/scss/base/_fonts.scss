@@ -1,13 +1,13 @@
 @font-face {
-	font-family: "geometria_extrabold";
-	font-display: swap;
-	src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
-	font-weight: 400;
-}
-@font-face {
 	font-family: "geometria_bold";
 	font-display: swap;
 	src: url("../fonts/geometria_bold.woff2") format("woff2"), url("../fonts/geometria_bold.woff") format("woff"), url("../fonts/geometria_bold.ttf") format("ttf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "geometria_extrabold";
+	font-display: swap;
+	src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
 	font-weight: 400;
 }
 @font-face {

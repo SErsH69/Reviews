@@ -643,16 +643,16 @@ template {
 }
 
 @font-face {
-  font-family: "geometria_extrabold";
+  font-family: "geometria_bold";
   font-display: swap;
-  src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
+  src: url("../fonts/geometria_bold.woff2") format("woff2"), url("../fonts/geometria_bold.woff") format("woff"), url("../fonts/geometria_bold.ttf") format("ttf");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "geometria_bold";
+  font-family: "geometria_extrabold";
   font-display: swap;
-  src: url("../fonts/geometria_bold.woff2") format("woff2"), url("../fonts/geometria_bold.woff") format("woff"), url("../fonts/geometria_bold.ttf") format("ttf");
+  src: url("../fonts/geometria_extrabold.woff2") format("woff2"), url("../fonts/geometria_extrabold.woff") format("woff"), url("../fonts/geometria_extrabold.ttf") format("ttf");
   font-weight: 400;
 }
 
@@ -812,6 +812,17 @@ textarea {
 .header__form input[type=email],
 .footer__info--form input[type=email] {
   width: 100% !important;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5 {
+  margin-top: 0;
+  color: #fff;
+  font-family: "geometria_bold";
+  font-weight: 700;
 }
 
 .header__in {
@@ -2288,6 +2299,10 @@ textarea {
 
 .breadcrums span a:hover {
   text-decoration: underline;
+}
+
+.breadcrums span a span {
+  color: #fff;
 }
 
 .breadcrums__splash {
