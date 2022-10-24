@@ -759,7 +759,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .wrapper__in .content__block {
@@ -1096,7 +1096,7 @@ textarea {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
   display: inline-block;
   text-decoration: none;
 }
@@ -1146,7 +1146,7 @@ textarea {
   order: 2;
   line-height: 16px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
   max-width: 650px;
   width: 100%;
   margin-right: 20px;
@@ -1340,7 +1340,7 @@ textarea {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .red_block__text p:first-child,
@@ -1557,7 +1557,7 @@ textarea {
   font-size: 12px;
   line-height: 16px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .about_block__blur-text p:first-child {
@@ -1613,7 +1613,7 @@ textarea {
   font-size: 12px;
   line-height: 16px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .main_prod {
@@ -1800,7 +1800,7 @@ textarea {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
   margin-bottom: 56px;
 }
 
@@ -2185,7 +2185,7 @@ textarea {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .main_first__more {
@@ -2585,7 +2585,7 @@ textarea {
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .brand_first__bottom {

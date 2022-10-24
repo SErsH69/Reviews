@@ -23,9 +23,10 @@ $(function () {
     const prevSlider = new PrevSlider();
     
     $('table').wrap('<div class="table_block"></div>');      
-    $('.main_first__more').on('click', function () {
+    $('.main_first__l-side').find('.main_first__more').on('click', function () {
         $(this).toggleClass('isActive');
         $('.content__text').toggleClass('isActive');
+        $('.main_first__text').toggleClass('isActive');
         if ($(this).hasClass('isActive')) {
             $(this).text('hide text')
         } else {
