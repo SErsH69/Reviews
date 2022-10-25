@@ -805,7 +805,26 @@ textarea {
 .header__form .wpcf7-not-valid-tip,
 .footer__info--form .wpcf7-response-output,
 .footer__info--form .wpcf7-not-valid-tip {
-  display: none !important;
+  position: fixed;
+  color: #fff;
+  right: 20px;
+  bottom: 20px;
+  font-family: "geometria_medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.wpcf7-response-output {
+  display: none;
+}
+.sent .wpcf7-response-output {
+  display: block;
+}
+.footer__info--form .wpcf7-not-valid-tip, .header__form .wpcf7-not-valid-tip {
+  border: 2px solid red;
+  padding: 5px;
 }
 
 .header__form input[type=email],
