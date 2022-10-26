@@ -805,26 +805,7 @@ textarea {
 .header__form .wpcf7-not-valid-tip,
 .footer__info--form .wpcf7-response-output,
 .footer__info--form .wpcf7-not-valid-tip {
-  position: fixed;
-  color: #fff;
-  right: 20px;
-  bottom: 20px;
-  font-family: "geometria_medium", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-.wpcf7-response-output {
-  display: none;
-}
-.sent .wpcf7-response-output {
-  display: block;
-}
-.footer__info--form .wpcf7-not-valid-tip, .header__form .wpcf7-not-valid-tip {
-  border: 2px solid red;
-  padding: 5px;
+  z-index: 20;
 }
 
 .header__form input[type=email],
@@ -841,6 +822,62 @@ textarea {
   color: #fff;
   font-family: "geometria_bold";
   font-weight: 700;
+}
+
+.header__form .wpcf7-not-valid-tip,
+.header__form .wpcf7-response-output,
+.footer__info--form .wpcf7-response-output,
+.footer__info--form .wpcf7-not-valid-tip {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  color: #fff;
+  transform: translate(50%, 50%);
+  right: 50%;
+  bottom: 50%;
+  font-family: "geometria_medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  background: #000;
+  line-height: 20px;
+  transition: all 0.3s ease-out;
+}
+
+@keyframes hideBlock {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.invalid .wpcf7-not-valid-tip {
+  animation: 5s linear 0s alternate hideBlock;
+}
+
+.sent .wpcf7-response-output {
+  animation: 5s linear 0s alternate hideBlock;
+}
+
+.footer__info--form .wpcf7-not-valid-tip,
+.header__form .wpcf7-not-valid-tip {
+  border: 2px solid red;
+  padding: 5px;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
 }
 
 .header__in {
@@ -2847,27 +2884,6 @@ textarea {
   .footer__menu--item {
     width: calc(25% - 24px);
   }
-
-  .main_websites__block {
-    flex-direction: column;
-    padding: 16px;
-  }
-
-  .main_websites__l-side {
-    border: 0;
-    flex: none;
-    padding-right: 0;
-    margin-bottom: 30px;
-    margin-top: 32px;
-  }
-
-  .main_websites__link {
-    display: none;
-  }
-
-  .main_websites__mobs {
-    display: block;
-  }
 }
 
 @media all and (max-width: 1300px) {
@@ -2911,6 +2927,29 @@ textarea {
 
   .serv_block__button {
     font-size: 14px;
+  }
+}
+
+@media all and (max-width: 1260px) {
+  .main_websites__block {
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .main_websites__l-side {
+    border: 0;
+    flex: none;
+    padding-right: 0;
+    margin-bottom: 30px;
+    margin-top: 32px;
+  }
+
+  .main_websites__link {
+    display: none;
+  }
+
+  .main_websites__mobs {
+    display: block;
   }
 }
 

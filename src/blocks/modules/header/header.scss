@@ -1,4 +1,6 @@
 .header {
+    position: relative;
+    z-index: 2;
     @media all and (max-width: 1023px) {
         margin-left: -16px;
         margin-right: -16px;

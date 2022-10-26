@@ -190,7 +190,7 @@ textarea {
         display: none !important;
     }
     .wpcf7-response-output, .wpcf7-not-valid-tip {
-        display: none !important;
+        z-index: 20;
     }
     input[type=email] {
         width: 100% !important;
@@ -203,4 +203,47 @@ textarea {
         font-family: "geometria_bold";
         font-weight: 700;
     }
+}
+.header__form .wpcf7-not-valid-tip,
+.header__form .wpcf7-response-output,
+.footer__info--form .wpcf7-response-output,
+.footer__info--form .wpcf7-not-valid-tip {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  color: #fff;
+  transform: translate(50%, 50%);
+  right: 50%;
+  bottom: 50%;
+  font-family: "geometria_medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  background: #000;
+  line-height: 20px;
+  transition: all .3s ease-out;
+}
+@keyframes hideBlock {
+    0% {
+      opacity: 0;
+      visibility: hidden;
+    }
+    50% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+.invalid .wpcf7-not-valid-tip {
+    animation: 5s linear 0s alternate hideBlock;
+}
+.sent .wpcf7-response-output {
+    animation: 5s linear 0s alternate hideBlock;
+}
+.footer__info--form .wpcf7-not-valid-tip, .header__form .wpcf7-not-valid-tip {
+  border: 2px solid red;
+  padding: 5px;
 }

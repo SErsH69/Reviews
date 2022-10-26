@@ -44,7 +44,7 @@
         padding: 24px 32px;
         display: flex;
         justify-content: space-between;
-        @media all and (max-width: 1320px) {
+        @media all and (max-width: 1260px) {
             flex-direction: column;
             padding: 16px;
         }
@@ -74,7 +74,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        @media all and (max-width: 1320px) {
+        @media all and (max-width: 1260px) {
             border: 0;
             flex: none;
             padding-right: 0;
@@ -117,7 +117,7 @@
                 background: url("data:image/svg+xml,%3Csvg width='17' height='10' viewBox='0 0 17 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0418 9.68808L16.2631 5.43515C16.3972 5.30067 16.4641 5.12247 16.4641 4.94527C16.4641 4.76823 16.3972 4.59152 16.2631 4.45622L12.0418 0.203455C11.7734 -0.0678183 11.3379 -0.0678183 11.0697 0.203455C10.8011 0.473734 10.8011 0.912276 11.0697 1.18289L13.9581 4.09286H1.58333C1.1231 4.09286 0.75 4.46595 0.75 4.92619C0.75 5.38643 1.1231 5.75953 1.58333 5.75953H13.996L11.069 8.70865C10.8011 8.97876 10.8011 9.41763 11.069 9.68808C11.3373 9.95836 11.7727 9.95836 12.0418 9.68808Z' fill='white'/%3E%3C/svg%3E%0A") 50% no-repeat;
             }
         }
-        @media all and (max-width: 1320px) {
+        @media all and (max-width: 1260px) {
             display: none;
         }
         &:hover {
@@ -125,7 +125,7 @@
         }
     }
     &__mobs {
-        @media all and (max-width: 1320px) {
+        @media all and (max-width: 1260px) {
             display: block;
         }
         @media all and (max-width: 1023px) {
